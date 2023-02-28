@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My technologies</title>
+    <link href="my-tech.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+        <div main="yes">
+        <body style='margin-top:10%;margin-left:15%;margin-right:15%;'></body>
+        <h1>My technologies</h1>
+       
+        <form>
+        
+            <input type="text" name="" placeholder="Enter new technology..." id="text">
+            <button id="add">Add</button>
+            <button id="clear">Remove all items</button>
+           
+        </form>
+        </div>
+
+
+
+
+        <div id="output">
+            <ol id="newbutton"> </ol>
+        </div>
+
+
+    <script>
+
+
+       
+        let add = document.querySelector("#add");
+        add.addEventListener("click",addOne, "active");
+        function addOne(){
+            let li = document.createElement("li");
+            li.innerText = document.querySelector("#text").value;
+            document.getElementById("newbutton").appendChild(li);
+        }
+        window.addEventListener('load', () => {
+        const button = document.querySelector('#clear');
+        button.addEventListener('click', () => {
+            document.querySelector('#enter').value = "";
+        });
+    });
+   
+    </script>
+
+
+
+
+</body>
+
+
+
+
+</html>
