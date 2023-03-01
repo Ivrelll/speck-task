@@ -16,7 +16,9 @@ h1 {
     margin: 0 0 10px;
     color: #2f2f2f;
   }
-
+.yes{
+  margin: 10% 20% 20%;
+}
 input
 {
   top: 30px;
@@ -29,7 +31,6 @@ input[type="text"]
   font-size: 12px;
   text-align: left;
   font-family: CarmenL;
-  margin: 0 0 0;
   width: 250px;
   height: 30px;
   border: 1px solid #777373;
@@ -46,6 +47,7 @@ input[type="text"]:active, input[type="text"]:focus{
 #add
 {
   left: 20px;
+  bottom: -30px;
   font-size: 12px;
   font-family: Carmen;
   text-align: center;
@@ -55,7 +57,6 @@ input[type="text"]:active, input[type="text"]:focus{
   border: 1px solid #b5373a;
   width: 90px;
   position: relative;
-  margin-top: 10px;
   height: 30px;
   border-radius: 5px 5px 5px 5px;
 }
@@ -66,9 +67,9 @@ input[type="text"]:active, input[type="text"]:focus{
 }
 #clear
 { 
-  position: fixed;
-  margin-top: 3%;
-  margin-left: 35%;
+  position: relative;
+  top: 30px;
+  left: 650px;
   width: 130px;
   height: 30px;
   color: #b5373a;
@@ -84,10 +85,12 @@ input[type="text"]:active, input[type="text"]:focus{
   border: none;
   -moz-outline-style: none;
 }
+.output{
+  margin: 0 20%;
+}
 ol li 
 {
-  position: relative;
-  top: 50px;
+  
   width: 400px;
   height: 60px;
   color: black;
